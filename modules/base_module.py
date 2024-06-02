@@ -4,11 +4,7 @@ import allure
 from requests import Response
 
 
-class BaseTestData:
-    @staticmethod
-    def format_date_as_json(data):
-        json_data = json.dumps(data)
-        return json_data
+class BaseModule:
 
     @staticmethod
     def attach_request(request):

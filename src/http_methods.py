@@ -2,6 +2,8 @@ import os
 import requests
 from dotenv import load_dotenv
 
+from src.prepare_data.prepare_basic_data import BaseTestData
+
 load_dotenv()
 
 
@@ -38,6 +40,7 @@ class MyRequests:
                 headers=headers,
                 cookies=cookies
             )
+            BaseTestData.attach_response(response=response)
             return response
         except Exception as e:
             raise e
