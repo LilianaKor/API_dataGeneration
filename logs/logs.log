@@ -62,3 +62,7 @@ ERROR  |  2024-07_21 20:43:59  |  1 validation error for CreatePetShem
 status
   Value error, Invalid status: wrong_status. Status must be one of ["available", "pending", "sold"] [type=value_error, input_value='wrong_status', input_type=str]
     For further information visit https://errors.pydantic.dev/2.7/v/value_error  |  file: src.validator
+ERROR  |  2025-03_05 17:45:15  |  1 validation error for CreatePetShem
+status
+  Value error, Invalid status: wrong_status. Status must be one of ["available", "pending", "sold"] [type=value_error, input_value='wrong_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.7/v/value_error  |  file: src.validator
